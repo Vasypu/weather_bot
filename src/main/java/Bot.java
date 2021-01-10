@@ -26,7 +26,6 @@ public class Bot extends TelegramLongPollingBot {
         }
     }
 
-
     public void sendMsg(Message message, String text) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.enableMarkdown(true);
@@ -46,7 +45,6 @@ public class Bot extends TelegramLongPollingBot {
         }
     }
 
-
     public void onUpdateReceived(Update update) {
         Model model = new Model();
         Message message = update.getMessage();
@@ -64,12 +62,9 @@ public class Bot extends TelegramLongPollingBot {
                     } catch (IOException e) {
                         sendMsg(message, "Город не найден!");
                     }
-
             }
         }
-
     }
-
 
     public void setButtons(SendMessage sendMessage) {
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
