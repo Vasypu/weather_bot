@@ -1,1 +1,1 @@
-worker: java -cp target/classes/:target/dependency/* Main
+worker: sh target/bin/weather_bot
