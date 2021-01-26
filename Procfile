@@ -1,1 +1,1 @@
-worker: sh target/bin/weather_bot
+web: sh target/bin/weather_bot
